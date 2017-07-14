@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Application - History of changes</title>
-    <meta name="author" content="Sudheer Veeravalli">
-    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Application - History of changes</title>
+<meta name="author" content="Sudheer Veeravalli">
+<meta
+	content="Display any CSV file as a searchable, filterable, pretty HTML table" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scroll.js"></script>
-    <link href="css/scroll.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/dataTables.bootstrap.css" rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scroll.js"></script>
+<link href="css/scroll.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
-    <div align="center">
-    	<button class="btn btn-info" onclick="location.href='index.html'">Back to Home</button>
-    </div>
-    
-    <div class="container-fluid">
-		<h2> All Versions of the application </h2>
+<body>
+	<div align="center">
+		<button class="btn btn-info" onclick="location.href='index.html'">Back
+			to Home</button>
+	</div>
 
-    	<div id='table-container'></div>
-    </div><!-- /.container -->
+	<div class="container-fluid">
+		<h2>All Versions of the application</h2>
 
-    <footer class='footer'>
+		<div id='table-container'></div>
+	</div>
+	<!-- /.container -->
+
+	<footer class='footer'>
+		<hr />
 		<div class='container-fluid'>
-			<hr />
 			<p class='pull-right'>
-				Powered By <a href='https://www.quest-global.com/'>Quest Global</a>
-			</p>			
+				Capability Demonstration by <a
+					href='https://github.com/veersudhir83'>Sudheer Veeravalli</a> using
+				<a href='https://github.com/veersudhir83/predix-static-app/'>predix-static-app</a>
+			</p>
 		</div>
 	</footer>
 
-    <!-- Bootstrap core JavaScript
+	<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.csv.min.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/dataTables.bootstrap.js"></script>
-    <script src='js/csv_to_html_table.js'></script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.csv.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.js"></script>
+	<script src='js/csv_to_html_table.js'></script>
 
-    <script>
+	<script>
       init_table({
         csv_path: 'data/PLM_BUILD_METRICS.CSV',
         element: 'table-container',
@@ -57,5 +63,5 @@
         datatables_options: {"paging": true}
       });
     </script>
-  </body>
+</body>
 </html>
