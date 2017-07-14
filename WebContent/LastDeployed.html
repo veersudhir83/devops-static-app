@@ -1,10 +1,57 @@
-<html>
-<head>
-<style type=text/css>
-.f2 {font-size:20px;font-family:Verdana,Arial,Geneva;text-decoration:none;font-weight:bold}
-</style>
-</head>
-<body>
-<span class=f2> Last Deployed at Mon Jul 10 11:22:26 IST 2017 </span>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Health Clinics in Chicago</title>
+    <meta name="author" content="Sudheer Veeravalli">
+    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div align="center">
+    	<button class="btn btn-info" onclick="location.href='index.html'">Back to Home</button>
+    </div>
+    
+    <div class="container-fluid">
+		<h2> Health Clinics in Chicago </h2>
+
+    	<div id='table-container'></div>
+    </div><!-- /.container -->
+
+    <footer class='footer'>
+		<div class='container-fluid'>
+			<hr />
+			<p class='pull-right'>
+				Powered By <a href='https://www.quest-global.com/'>Quest Global</a>
+			</p>			
+		</div>
+	</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script src='js/csv_to_html_table.js'></script>
+
+    <script>
+      init_table({
+        csv_path: 'data/PLM_BUILD_METRICS.CSV',
+        element: 'table-container',
+        allow_download: true,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": true}
+      });
+    </script>
+  </body>
 </html>
