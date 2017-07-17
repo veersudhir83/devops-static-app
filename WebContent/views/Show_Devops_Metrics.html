@@ -11,13 +11,13 @@
 	content="Display any CSV file as a searchable, filterable, pretty HTML table" />
 
 <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/dataTables.bootstrap.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
+<link href="./../css/bootstrap.min.css" rel="stylesheet">
+<link href="./../css/dataTables.bootstrap.css" rel="stylesheet">
+<link href="./../css/custom.css" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/scroll.js"></script>
-<link href="css/scroll.css" rel="stylesheet">
+<script src="./../js/scroll.js"></script>
+<link href="./../css/scroll.css" rel="stylesheet">
 
 </head>
 
@@ -29,10 +29,10 @@
 			</div>
 			<div></div>
 			<div class="header-logo-container">
-				<img class="header-logo" src="./images/predix_logo.svg"></img>
+				<img class="header-logo" src="./../images/predix_logo.svg"></img>
 			</div>
 		</div>
-		<button class="btn btn-info" onclick="location.href='index.html'">Home</button>
+		<button class="btn btn-info" onclick="location.href='./../index.html'">Home</button>
 	</div>	
 
 	<div class="container-fluid">
@@ -54,16 +54,16 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.csv.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.js"></script>
-	<script src='js/csv_to_html_table.js'></script>
+	<script src="./../js/jquery.min.js"></script>
+	<script src="./../js/bootstrap.min.js"></script>
+	<script src="./../js/jquery.csv.min.js"></script>
+	<script src="./../js/jquery.dataTables.min.js"></script>
+	<script src="./../js/dataTables.bootstrap.js"></script>
+	<script src='./../js/csv_to_html_table.js'></script>
 
 	<script>
       init_table({
-        csv_path: 'data/DEVOPS_METRICS.CSV',
+        csv_path: './../data/DEVOPS_METRICS.CSV',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
