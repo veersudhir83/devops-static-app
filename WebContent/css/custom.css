@@ -71,6 +71,12 @@ h2 {
   text-transform: capitalize;  
 }
 
+.redFont {
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	color: #ff0000;
+	float: right;
+}
+
 #logo {
   margin-top: 20px;
 }
