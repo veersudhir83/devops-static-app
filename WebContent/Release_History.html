@@ -13,6 +13,7 @@
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scroll.js"></script>
@@ -22,13 +23,23 @@
 
 <body>
 	<div align="center">
-		<button class="btn btn-info" onclick="location.href='index.html'">Back
-			to Home</button>
+		<div class="header">
+			<div>			
+				<h2>All Versions of the application</h2>
+			</div>
+			<div></div>
+			<div class="header-logo-container">
+				<img class="header-logo" src="./images/predix_logo.svg"></img>
+			</div>
+		</div>
+	</div>
+	
+	<div align="center">
+		<button class="btn btn-info" onclick="location.href='index.html'">Home</button>
 	</div>
 
 	<div class="container-fluid">
-		<h2>All Versions of the application</h2>
-
+		<br/>
 		<div id='table-container'></div>
 	</div>
 	<!-- /.container -->
