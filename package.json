@@ -1,0 +1,14 @@
+{
+  "name": "predix-static-app",
+  "version": "4.2.0",
+  "private": true,
+  "scripts": {
+    "start": "node nodeServer.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "debug": "~2.2.0",
+    "express": "~4.15.3"
+  },
+  "author": "veersudhir83"  
+}
