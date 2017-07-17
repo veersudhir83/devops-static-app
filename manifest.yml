@@ -5,4 +5,6 @@ applications:
     memory: 128M
     disk_quota: 256M
     stack: cflinuxfs2
-    buildpack: staticfile_buildpack
+    #buildpack: staticfile_buildpack  #Enable this if you want to use static file with authentication
+    buildpack: nodejs_buildpack
+    command: node nodeServer.js

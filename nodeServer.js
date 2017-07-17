@@ -8,7 +8,7 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, 'WebContent')));
 
-var server = app.listen(8000, function () {
+var server = app.listen(process.env.VCAP_APP_PORT || 8000, function () {
 
   var host = server.address().address;
   var port = server.address().port;
