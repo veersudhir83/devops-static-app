@@ -3,6 +3,16 @@
 > * **Staticfile.auth** --> Contains user name and hashed password (generated from [htaccesstool])
 > * **Staticfile**      --> Defines the root directory of the content
 
+### Command to create newrelic service in cloud foundry
+```sh
+$ cf cs predixplatform-newrelic standard newrelic
+```
+
+### Install newrelic npm dependency and add to package.json
+```sh
+$ npm install newrelic --save
+```
+
 ### Command to push
 ```sh
 $ cf push
