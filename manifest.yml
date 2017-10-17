@@ -5,9 +5,12 @@ applications:
     memory: 128M
     disk_quota: 256M
     stack: cflinuxfs2
-    buildpack: staticfile_buildpack  #Enable this if you want to use static file with authentication
+    #buildpack: staticfile_buildpack  #Enable this if you want to use static file with authentication
 
     ### Enable below set if want to use node js as server ###
-    # buildpack: nodejs_buildpack
-    # command: node nodeServer.js
+    buildpack: nodejs_buildpack
+    command: node nodeServer.js
     ### End of NodeJS settings ###
+    
+    services:
+    - newrelic
