@@ -2,6 +2,7 @@
 ### Instructions
 > * **Staticfile.auth** --> Contains user name and hashed password (generated from [htaccesstool])
 > * **Staticfile**      --> Defines the root directory of the content
+> * **newrelic.js**     --> Has a placeholder to input the new relic license key. Once it's injected, data gets pushed to NewRelic.
 
 ### Command to create newrelic service in cloud foundry
 ```sh
