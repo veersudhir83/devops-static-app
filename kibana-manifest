@@ -1,0 +1,11 @@
+applications:
+- name: veeravsu-kibana-logs
+  instances: 1
+  memory: 128M
+  disk_quota: 1024M
+  routes:
+  - route: veeravsu-kibana-logs-unpuddled-wellhouse.run.aws-usw02-pr.ice.predix.io
+  buildpack: https://github.com/heroku/heroku-buildpack-go.git
+  services:
+  - veeravsu-logstash
+  stack: cflinuxfs2
