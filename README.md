@@ -1,4 +1,4 @@
-# predix-static-app
+# devops-static-app
 ### Instructions
 > * **Staticfile.auth** --> Contains user name and hashed password (generated from [htaccesstool])
 > * **Staticfile**      --> Defines the root directory of the content
