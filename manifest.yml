@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: predix-static-app
+  - name: devops-static-app
     instances: 2
     memory: 128M
     disk_quota: 256M

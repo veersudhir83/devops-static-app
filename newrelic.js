@@ -9,7 +9,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['predix-static-app'],
+  app_name: ['devops-static-app'],
   /**
    * Your New Relic license key.
    */

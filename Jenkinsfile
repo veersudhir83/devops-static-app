@@ -16,9 +16,9 @@ properties(projectProperties)
 try {
   node {
 
-    def appName = "predix-static-app"            // main application name
+    def appName = "devops-static-app"            // main application name
     def appEnv = 'DEV'                           // application environment
-    def appClientName = 'predix-static-app'      // application client name
+    def appClientName = 'devops-static-app'      // application client name
     def appClientExtension = "tar"               // extension of the client artifact
     def artifactoryRepoName = 'DevOps'           // repo name in artifactory
 
@@ -40,7 +40,7 @@ try {
 
     stage('Checkout') {
       timestamps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'file:///var/lib/jenkins/userContent/predix-static-app/']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/veersudhir83/devops-static-app/']]])
       }
     }
 
